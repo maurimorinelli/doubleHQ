@@ -12,7 +12,7 @@
 - [4. Changelog & Shipping Analysis](#4-changelog--shipping-analysis)
 - [5. User Pain Points](#5-user-pain-points)
 - [6. Competitive Landscape](#6-competitive-landscape)
-- [7. The Gap We Identified](#7-the-gap-we-identified)
+- [7. The Opportunity We Explored](#7-the-opportunity-we-explored)
 - [8. Feature Selection & Rationale](#8-feature-selection--rationale)
 - [9. Architecture Decisions](#9-architecture-decisions)
 - [10. AI Insights — Business Rules](#10-ai-insights--business-rules)
@@ -176,27 +176,18 @@ Double touches **every stage** of the month-end close:
 
 ---
 
-## 7. The Gap We Identified
+## 7. The Opportunity We Explored
 
-Double provides excellent **per-client** tools (file reviews, task lists, client portal), but there is **no intelligent bird's-eye view** that answers the critical daily question:
+> **"Which of my clients should I focus on today, and why?"**
 
-> **"Which of my 80 clients should I worry about right now, and why?"**
+This is the question we explored with the AI Close Copilot prototype — building on Double's existing workflow model and adding an AI-powered prioritization layer.
 
-Today, a firm manager has to click into each client individually, check their status, and mentally track who's behind, who's stuck waiting for a client response, etc. With 50+ clients, this becomes chaotic.
+### Why This Felt Like the Right Direction
 
-### Evidence
-
-- **User reviews** directly cite difficulty tracking project status across clients
-- **No dashboard** exists that prioritizes or scores clients
-- **Canny data** shows the top 2 request categories (1,561 combined requests) are Client Portal and Workflow Management
-- **Competitors** don't have this either — opportunity for differentiation
-
-### What They Don't Have Yet
-
-- ❌ No bird's-eye-view dashboard across all clients
-- ❌ No AI-powered close health scoring
-- ❌ No team workload optimization / load balancing
-- ❌ No proactive AI insights ("which client should I worry about?")
+- **User feedback** suggests demand for easier cross-client visibility (Capterra, G2)
+- **Canny data** shows the top 2 request categories (1,561 combined requests) are Client Portal and Workflow Management — both areas where a firm-wide view adds value
+- **Double's AI investment** (45% of recent releases) makes an AI-powered overview a natural fit
+- This kind of feature **compounds Double's existing strengths** rather than adding a disconnected module
 
 ---
 

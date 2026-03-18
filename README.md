@@ -6,7 +6,7 @@ A full-stack prototype that explores an AI-powered command center for bookkeepin
 
 Built as a monorepo using the same stack Double uses in production: React, Redux Toolkit, TanStack Query, Express, TypeORM, and PostgreSQL, with Anthropic Claude for AI-powered transaction intelligence.
 
-🌐 **[Live Demo](http://doublehq-copilot-frontend-demo.s3-website-us-east-1.amazonaws.com/)** · 📂 **[GitHub Repo](https://github.com/maurimorinelli/doubleHQ)** · 📄 **[Research & Product Analysis](docs/RESEARCH.md)**
+🌐 **[Live Demo](http://doublehq-copilot-frontend-demo.s3-website-us-east-1.amazonaws.com/)** · 📄 **[Research & Product Analysis](docs/RESEARCH.md)**
 
 ---
 
