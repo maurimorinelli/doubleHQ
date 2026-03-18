@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.agent/
+.env
+.env.local
+*.log
+.DS_Store
+coverage/
+
+# Terraform
+infra/.terraform/
+infra/*.tfstate
+infra/*.tfstate.backup
+infra/terraform.tfvars
+infra/.terraform.lock.hcl
+tsconfig.tsbuildinfo
+repo-ignore/

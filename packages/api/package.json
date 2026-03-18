@@ -1,0 +1,47 @@
+{
+    "name": "@doublehq/api",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
+        "build": "tsc",
+        "start": "node dist/main.js",
+        "seed": "ts-node src/infrastructure/database/seeds/run-seed.ts",
+        "migration:run": "typeorm migration:run -d src/infrastructure/config/data-source.ts",
+        "migration:generate": "typeorm migration:generate -d src/infrastructure/config/data-source.ts",
+        "test": "jest",
+        "test:unit": "jest --testPathPatterns=unit",
+        "test:integration": "jest --testPathPatterns=integration"
+    },
+    "dependencies": {
+        "@anthropic-ai/sdk": "^0.78.0",
+        "@doublehq/shared": "*",
+        "bcryptjs": "^3.0.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.0",
+        "express": "^4.21.0",
+        "jsonwebtoken": "^9.0.3",
+        "openai": "^4.77.0",
+        "pg": "^8.13.0",
+        "reflect-metadata": "^0.2.0",
+        "typeorm": "^0.3.20",
+        "uuid": "^11.0.0",
+        "zod": "^4.3.6"
+    },
+    "devDependencies": {
+        "@testcontainers/postgresql": "^11.12.0",
+        "@types/bcryptjs": "^2.4.6",
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.0",
+        "@types/jest": "^30.0.0",
+        "@types/jsonwebtoken": "^9.0.10",
+        "@types/node": "^22.0.0",
+        "@types/uuid": "^10.0.0",
+        "jest": "^30.3.0",
+        "testcontainers": "^11.12.0",
+        "ts-jest": "^29.4.6",
+        "ts-node": "^10.9.0",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.7.0"
+    }
+}

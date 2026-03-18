@@ -1,0 +1,23 @@
+# ─── Terraform Variables ───────────────────────────────────
+# Copy this file to terraform.tfvars and fill in your values
+# NEVER commit terraform.tfvars to version control!
+
+# AWS Region
+aws_region = "us-east-1"
+
+# Environment
+environment = "demo"
+
+# Database
+db_name     = "doublehq_copilot"
+db_username = "doublehq"
+db_password = "CHANGE-ME-use-a-strong-password"
+
+# Secrets
+jwt_secret        = "CHANGE-ME-generate-a-random-secret"
+anthropic_api_key = "sk-ant-api03-your-key-here"
+
+# ECS (cost-optimized defaults)
+api_cpu           = 256   # 0.25 vCPU
+api_memory        = 512   # 512 MB
+api_desired_count = 1     # Single task for demo

@@ -1,0 +1,15 @@
+node_modules
+.git
+.gitignore
+*.md
+docs/
+images/
+ui-designs/
+.agent/
+.env
+.env.*
+packages/web/
+packages/api/dist/
+packages/shared/dist/
+**/*.test.ts
+**/__tests__/
